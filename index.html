@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>滋賀グルメメディア｜ポップリード</title>
+<meta name="description" content="滋賀県（大津・草津・近江八幡エリア）の飲食店を地元目線で紹介するグルメメディア。">
+<style>
+  :root { --dark: #1a1a2e; --primary: #ff6b6b; --bg: #f5f5f7; --white: #fff; --gray: #888; --border: #e0e0e0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: var(--bg); color: #333; }
+  .header { background: var(--dark); color: #fff; padding: 40px 20px; text-align: center; }
+  .header h1 { font-size: 28px; letter-spacing: 2px; }
+  .header h1 em { font-style: normal; color: var(--primary); }
+  .header p { color: var(--gray); margin-top: 8px; font-size: 14px; }
+  .nav { background: var(--white); border-bottom: 1px solid var(--border); padding: 12px 20px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .nav a { color: #333; text-decoration: none; font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 20px; transition: all 0.2s; }
+  .nav a:hover, .nav a.active { background: var(--primary); color: #fff; }
+  .container { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
+  .article-list { display: grid; gap: 20px; }
+  .article-card { background: var(--white); border-radius: 12px; border: 1px solid var(--border); overflow: hidden; transition: all 0.2s; }
+  .article-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); transform: translateY(-2px); }
+  .article-card a { text-decoration: none; color: inherit; display: block; padding: 24px; }
+  .article-card .tag { display: inline-block; font-size: 11px; padding: 3px 10px; border-radius: 12px; background: #fff0f0; color: var(--primary); font-weight: 600; margin-bottom: 8px; }
+  .article-card h2 { font-size: 18px; line-height: 1.5; margin-bottom: 8px; }
+  .article-card .excerpt { font-size: 13px; color: var(--gray); line-height: 1.7; }
+  .article-card .meta { font-size: 11px; color: #bbb; margin-top: 10px; }
+  .hero { text-align: center; padding: 60px 20px; }
+  .hero h2 { font-size: 22px; margin-bottom: 12px; }
+  .hero p { color: var(--gray); font-size: 14px; line-height: 1.8; }
+  .footer { text-align: center; padding: 40px 20px; color: var(--gray); font-size: 12px; border-top: 1px solid var(--border); margin-top: 40px; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>POP<em>LEAD</em> MEDIA</h1>
+  <p>滋賀グルメメディア｜大津・草津・近江八幡の飲食店ガイド</p>
+</header>
+
+<nav class="nav">
+  <a href="/" class="active">TOP</a>
+  <a href="/articles/">記事一覧</a>
+</nav>
+
+<div class="container">
+  <div class="hero">
+    <h2>滋賀の「美味しい」を、地元から届ける</h2>
+    <p>大津から近江八幡まで、JR琵琶湖線沿線の飲食店を<br>食べログ・Google評価データと編集部の取材で厳選して紹介します。</p>
+  </div>
+
+  <div class="article-list" id="articles">
+    <!-- 記事が追加されるとここに並ぶ -->
+    <div class="article-card">
+      <a href="/articles/otsu-izakaya-settai/">
+        <span class="tag">居酒屋</span>
+        <h2>大津駅周辺の居酒屋おすすめ6選｜接待にふさわしい名店</h2>
+        <p class="excerpt">琵琶湖のほとり、大津。水運とともに育まれた食文化が、今も静かに息づく土地である。接待とは、料理を介した対話だ。</p>
+        <div class="meta">2026.04.02 ・ dancyu系ライター</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  &copy; 2026 POPLEAD MEDIA. All rights reserved.
+</footer>
+
+</body>
+</html>
